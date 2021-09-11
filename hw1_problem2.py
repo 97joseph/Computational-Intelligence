@@ -7,6 +7,13 @@
 
 def tip_amount(bill, good_service):
     # ADD YOUR CODE HERE
+    if bill <= 25:
+        tip = 6
+    elif bill > 25 and good_service == True:
+            tip = bill * 0.27
+    else:
+                tip = bill * 0.13
+    return tip
     return -1 # CHANGE OR REMOVE THIS LINE
 
 

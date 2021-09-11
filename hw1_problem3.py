@@ -7,6 +7,11 @@
 
 def getSeconds(hours, minutes, seconds):
     # ADD YOUR CODE HERE
+    hours = int(hours)
+    minutes = int(minutes)
+    seconds = int(seconds)
+    x = (hours*3600) + (minutes*60) + seconds
+    return x # CHANGE OR REMOVE THIS LINE
     return -1 # CHANGE OR REMOVE THIS LINE
 
 

@@ -8,6 +8,17 @@
 def how_long(distance, fraction, scale):
     c = 186000
     # ADD YOUR CODE HERE
+    speed = c * fraction
+    time = distance / speed
+    if scale == "M":
+        return time / 60
+    elif scale == "H":
+            return time / 3600
+    elif scale == "D":
+                return time / (3600*24)
+    elif scale == "Y":
+                    return time / (3600*24*365)
+    return time
     return -1 # CHANGE OR REMOVE THIS LINE
 
 
